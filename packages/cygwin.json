@@ -1,0 +1,12 @@
+{
+  "type": "zip",
+  "name": "cygwin64",
+  "filename": "cygwin64.zip",
+  "url": "https://azrael.digipen.edu/~mmead/www/public/Files/preinstalls/cygwin64-2016-preinstalled.zip",
+  "installPath": "C:\\",
+  "installRoot": "C:\\cygwin64",
+  "pathVar": "C:\\cygwin64\\bin",
+  "guid": null,
+  "installArguments": null,
+  "removeArguments": null
+}

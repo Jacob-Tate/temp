@@ -1,0 +1,13 @@
+{
+    "type": "exe",
+    "name": "LLVM",
+    "filename": "llvm.exe",
+    "url": "http://releases.llvm.org/7.0.0/LLVM-7.0.0-win64.exe",
+    "installPath": null,
+    "installRoot": null,
+    "pathVar": null,
+    "guid": "LLVM",
+    "installArguments": "/S",
+    "removeArguments": "/S",
+    "dirArgument": "D"
+}

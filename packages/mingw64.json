@@ -1,0 +1,12 @@
+{
+  "type": "zip",
+  "name": "mingw64",
+  "filename": "mingw64.7z",
+  "url": "https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.1.0/threads-posix/seh/x86_64-7.1.0-release-posix-seh-rt_v5-rev1.7z/download",
+  "installPath": "C:\\",
+  "installRoot": "C:\\mingw64",
+  "pathVar": "C:\\mingw64\\bin",
+  "guid": null,
+  "installArguments": null,
+  "removeArguments": null
+}

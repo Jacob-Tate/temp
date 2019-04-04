@@ -1,0 +1,18 @@
+{
+    "type": "exe",
+    "name": "Visual Studio Build Tools 2017",
+    "filename": "vs_buildtools.exe",
+    "url": "https://aka.ms/vs/15/release/vs_buildtools.exe",
+    "installPath": null,
+    "installRoot": null,
+    "pathVar": null,
+    "guid": null,
+    "installArguments": "--quiet --norestart --nocache --wait --add \"Microsoft.VisualStudio.Workload.VCTools\"",
+    "removeArguments": null,
+    "removeCommands": [
+        "--quiet --norestart --nocache --wait --update \"Microsoft.VisualStudio.Workload.VCTools\"",
+        "--quiet --norestart --nocache --wait --remove \"Microsoft.VisualStudio.Workload.VCTools\""
+    ],
+    "log": false,
+    "downloadBeforeRemove": true
+}

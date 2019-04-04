@@ -1,0 +1,14 @@
+{
+    "type": "exe",
+    "name": "Doxygen",
+    "filename": "doxygen.exe",
+    "url": "https://sourceforge.net/projects/doxygen/files/rel-1.8.6/doxygen-1.8.6-setup.exe/download",
+    "installPath": null,
+    "installRoot": null,
+    "pathVar": null,
+    "guid": "doxygen_is1",
+    "installArguments": "/sp- /verysilent /norestart",
+    "removeArguments": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+    "dirArgument": "DIR",
+    "log": true
+}
