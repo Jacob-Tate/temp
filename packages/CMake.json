@@ -12,8 +12,8 @@
     "installArguments": "ADD_CMAKE_TO_PATH=\"System\"",
 	"removeArguments": null,
 	"removeCommands": null,
-	"log": null,
+	"log": false,
 	"dirArgument": null,
-	"downloadBeforeRemove": null,
-	"downloadBeforeInstall": null
+	"downloadBeforeRemove": false,
+	"downloadBeforeInstall": true
 }

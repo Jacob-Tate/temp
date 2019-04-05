@@ -18,5 +18,5 @@
 	"log": false,
 	"dirArgument": null,
 	"downloadBeforeRemove": true,
-	"downloadBeforeInstall": null
+	"downloadBeforeInstall": true
 }

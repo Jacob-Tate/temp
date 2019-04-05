@@ -12,8 +12,8 @@
     "installArguments": "/S",
     "removeArguments": "/S",
 	"removeCommands": null,
-	"log": null,
+	"log": false,
     "dirArgument": "D",
-	"downloadBeforeRemove": null,
-	"downloadBeforeInstall": null
+	"downloadBeforeRemove": false,
+	"downloadBeforeInstall": true
 }
