@@ -7,7 +7,7 @@
 	"urls": null,
 	"installPath": null,
 	"installRoot": null,
-	"pathVar": null,
+	"pathVar": "C:\\Program Files\\llvm\\bin",
     "guid": "LLVM",
     "installArguments": "/S",
     "removeArguments": "/S",

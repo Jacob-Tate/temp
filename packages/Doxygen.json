@@ -7,7 +7,7 @@
 	"urls": null,
 	"installPath": null,
 	"installRoot": null,
-	"pathVar": null,
+	"pathVar": "C:\\Program Files\\doxygen\\bin",
     "guid": "doxygen_is1",
     "installArguments": "/sp- /verysilent /norestart",
     "removeArguments": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
