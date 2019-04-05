@@ -1,0 +1,25 @@
+{
+	"type": "files",
+	"name": "Dr Memory Extra",
+	"filename": null,
+	"filenames": [
+        "C:\\Program Files (x86)\\Dr. Memory\\bin\\syscalls_wow64.txt",
+        "C:\\Program Files (x86)\\Dr. Memory\\bin\\syscalls_x86.txt"
+	],
+	"url": null,
+	"urls": [
+		"http://drmemory.org/syscalls_wow64.txt",
+		"http://drmemory.org/syscalls_x86.txt"
+	],
+	"installPath": "C:\\Program Files (x86)\\Dr. Memory\\bin",
+	"installRoot": null,
+	"pathVar": null,
+	"guid": null,
+	"installArguments": null,
+	"removeArguments": null,
+	"removeCommands": null,
+	"log": false,
+	"dirArgument": null,
+	"downloadBeforeRemove": false,
+	"downloadBeforeInstall": false
+}
