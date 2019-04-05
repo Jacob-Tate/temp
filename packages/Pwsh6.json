@@ -2,11 +2,18 @@
     "type": "msi",
     "name": "powershell 6",
     "filename": "pwsh.msi",
+	"filenames": null,
     "url": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.0/PowerShell-6.2.0-win-x64.msi",
-    "installPath": null,
-    "installRoot": null,
-    "pathVar": null,
+	"urls": null,
+	"installPath": null,
+	"installRoot": null,
+	"pathVar": null,
     "guid": "{69C0AFAD-2B31-4906-BDD3-8016DAAD82BC}",
     "installArguments": "",
-    "removeArguments": null
+	"removeArguments": null,
+	"removeCommands": null,
+	"log": null,
+	"dirArgument": null,
+	"downloadBeforeRemove": null,
+	"downloadBeforeInstall": null
 }

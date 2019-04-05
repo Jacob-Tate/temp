@@ -2,11 +2,18 @@
     "type": "zip",
     "name": "ninja",
     "filename": "ninja.zip",
+	"filenames": null,
     "url": "https://github.com/ninja-build/ninja/releases/download/v1.7.2/ninja-win.zip",
+	"urls": null,
     "installPath": "C:\\utils",
     "installRoot": "C:\\utils",
     "pathVar": "C:\\utils",
-    "guid": null,
-    "installArguments": null,
-    "removeArguments": null
+	"guid": null,
+	"installArguments": null,
+	"removeArguments": null,
+	"removeCommands": null,
+	"log": null,
+	"dirArgument": null,
+	"downloadBeforeRemove": null,
+	"downloadBeforeInstall": null
 }

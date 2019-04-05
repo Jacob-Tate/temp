@@ -2,11 +2,18 @@
     "type": "msi",
     "name": "CMake",
     "filename": "cmake.msi",
+	"filenames": null,
     "url": "https://cmake.org/files/v3.13/cmake-3.13.4-win64-x64.msi",
-    "installPath": null,
-    "installRoot": null,
-    "pathVar": null,
+	"urls": null,
+	"installPath": null,
+	"installRoot": null,
+	"pathVar": null,
     "guid": "{292F55E1-D020-4E56-BEAD-CF060AD5E35C}",
     "installArguments": "ADD_CMAKE_TO_PATH=\"System\"",
-    "removeArguments": null
+	"removeArguments": null,
+	"removeCommands": null,
+	"log": null,
+	"dirArgument": null,
+	"downloadBeforeRemove": null,
+	"downloadBeforeInstall": null
 }

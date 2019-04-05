@@ -1,0 +1,35 @@
+{
+	"type": "files",
+	"name": "utils",
+	"filename": null,
+	"filenames": [
+		"C:\\utils\\dumpit.exe",
+		"C:\\utils\\g++32.bat",
+		"C:\\utils\\gcc32.bat",
+		"C:\\utils\\lpath.bat",
+		"C:\\utils\\setvc17-32.bat",
+		"C:\\utils\\setvc17-64.bat",
+		"C:\\utils\\tablen.exe"
+	],
+	"url": null,
+	"urls": [
+		"https://azrael.digipen.edu/~mmead/www/files/utils/dumpit.exe",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/g++32.bat",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/gcc32.bat",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/lpath.bat",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/setvc17-32.bat",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/setvc17-64.bat",
+		"https://azrael.digipen.edu/~mmead/www/files/utils/tablen.exe"
+	],
+	"installPath": "C:\\utils",
+	"installRoot": null,
+	"pathVar": "C:\\utils",
+	"guid": null,
+	"installArguments": null,
+	"removeArguments": null,
+	"removeCommands": null,
+	"log": false,
+	"dirArgument": null,
+	"downloadBeforeRemove": false,
+	"downloadBeforeInstall": false
+}
