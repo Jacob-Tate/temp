@@ -51,7 +51,7 @@
         "examples": [
           "C:\\filename.exe"
         ],
-        "pattern": "^(([a-zA-Z]:)|((\\\\|/){1,2}\\w+)\\$?)((\\\\|/)(\\w[\\w ]*.*))+\\.([a-zA-Z0-9]+)$"
+        "pattern": "(.|\\s)*\\S(.|\\s)*"
       },
       "filenames": {
         "$id": "#/properties/filenames",
@@ -67,7 +67,7 @@
           "examples": [
             "C:\\filename.exe"
           ],
-          "pattern": "^(([a-zA-Z]:)|((\\\\|/){1,2}\\w+)\\$?)((\\\\|/)(\\w[\\w ]*.*))+\\.([a-zA-Z0-9]+)$"
+          "pattern": "(.|\\s)*\\S(.|\\s)*"
         }
       },
       "url": {
@@ -80,7 +80,7 @@
         "examples": [
           "https://www.download.filename.exe"
         ],
-        "pattern": "^(?:http(s)?:\\/\\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$"
+        "pattern": "(.|\\s)*\\S(.|\\s)*"
       },
       "urls": {
         "$id": "#/properties/urls",
@@ -97,7 +97,7 @@
             "https://www.download.filename1.exe",
             "https://www.download.filename2.exe"
           ],
-          "pattern": "^(?:http(s)?:\\/\\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$"
+          "pattern": "(.|\\s)*\\S(.|\\s)*"
         }
       },
       "installPath": {
@@ -146,7 +146,7 @@
         "examples": [
           "{123}"
         ],
-        "pattern": "^({)?(\\()?\\d+(?(1)})(?(2)\\))$"
+        "pattern": "(.|\\s)*\\S(.|\\s)*"
       },
       "installArguments": {
         "$id": "#/properties/installArguments",
