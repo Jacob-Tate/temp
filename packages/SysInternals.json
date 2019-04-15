@@ -1,0 +1,19 @@
+{
+    "type": "zip",
+    "name": "System Internals",
+    "filename": "SysinternalsSuite.zip",
+    "filenames": null,
+    "url": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+    "urls": null,
+    "installPath": "C:\\utils",
+    "installRoot": "C:\\utils",
+    "pathVar": "C:\\utils",
+    "guid": null,
+    "installArguments": null,
+    "removeArguments": null,
+    "removeCommands": null,
+    "log": false,
+    "dirArgument": null,
+    "downloadBeforeRemove": false,
+    "downloadBeforeInstall": true
+}
