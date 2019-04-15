@@ -2,7 +2,9 @@
   "type": "zip",
   "name": "ninja",
   "filename": "ninja.zip",
-  "filenames": null,
+  "filenames": [
+    "C:\\utils\\ninja.exe"
+  ],
   "url": "https://github.com/ninja-build/ninja/releases/download/v1.7.2/ninja-win.zip",
   "urls": null,
   "installPath": "C:\\utils",
