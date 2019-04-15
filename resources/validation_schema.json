@@ -275,9 +275,6 @@
               "$ref": "#/definitions/zip/filename-requires-url"
             },
             {
-              "$ref": "#/definitions/zip/filename-filenames-null"
-            },
-            {
               "$ref": "#/definitions/zip/zip-requires"
             }
           ]
@@ -484,28 +481,6 @@
               },
               "url": {
                 "type": "string"
-              }
-            }
-          }
-        },
-        "filename-filenames-null": {
-          "if": {
-            "properties": {
-              "filename": {
-                "type": "null"
-              },
-              "filenames": {
-                "type": "null"
-              }
-            }
-          },
-          "then": {
-            "properties": {
-              "filename": {
-                "type": "string"
-              },
-              "filenames": {
-                "type": "array"
               }
             }
           }
