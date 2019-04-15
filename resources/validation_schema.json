@@ -1,532 +1,532 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "temp",
-    "type": "object",
-    "title": "The Root Schema",
-    "required": [
-      "type",
-      "name",
-      "downloadBeforeRemove",
-      "downloadBeforeInstall"
-    ],
-    "properties": {
-      "type": {
-        "$id": "#/properties/type",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "temp",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "type",
+    "name",
+    "downloadBeforeRemove",
+    "downloadBeforeInstall"
+  ],
+  "properties": {
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "title": "The Type Schema",
+      "examples": [
+        "exe",
+        "files",
+        "zip",
+        "msi",
+        "script"
+      ],
+      "pattern": "(?i)^(exe|zip|files|msi|script)$"
+    },
+    "version": {
+      "$id": "#/properties/version",
+      "type": "string",
+      "title": "The Version Schema",
+      "examples": [
+        "1"
+      ],
+      "pattern": "(.|\\s)*\\S(.|\\s)*"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "examples": [
+        "Package Name"
+      ],
+      "pattern": "(.|\\s)*\\S(.|\\s)*"
+    },
+    "filename": {
+      "$id": "#/properties/filename",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Filename Schema",
+      "examples": [
+        "C:\\filename.exe"
+      ],
+      "pattern": "(.|\\s)*\\S(.|\\s)*"
+    },
+    "filenames": {
+      "$id": "#/properties/filenames",
+      "type": [
+        "array",
+        "null"
+      ],
+      "title": "The Filenames Schema",
+      "items": {
+        "$id": "#/properties/filenames/items",
         "type": "string",
-        "title": "The Type Schema",
-        "examples": [
-          "exe",
-          "files",
-          "zip",
-          "msi",
-          "script"
-        ],
-        "pattern": "(?i)^(exe|zip|files|msi|script)$"
-      },
-      "version": {
-        "$id": "#/properties/version",
-        "type": "string",
-        "title": "The Version Schema",
-        "examples": [
-          "1"
-        ],
-        "pattern": "(.|\\s)*\\S(.|\\s)*"
-      },
-      "name": {
-        "$id": "#/properties/name",
-        "type": "string",
-        "title": "The Name Schema",
-        "examples": [
-          "Package Name"
-        ],
-        "pattern": "(.|\\s)*\\S(.|\\s)*"
-      },
-      "filename": {
-        "$id": "#/properties/filename",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Filename Schema",
+        "title": "The Items Schema",
         "examples": [
           "C:\\filename.exe"
         ],
         "pattern": "(.|\\s)*\\S(.|\\s)*"
-      },
-      "filenames": {
-        "$id": "#/properties/filenames",
-        "type": [
-          "array",
-          "null"
-        ],
-        "title": "The Filenames Schema",
-        "items": {
-          "$id": "#/properties/filenames/items",
-          "type": "string",
-          "title": "The Items Schema",
-          "examples": [
-            "C:\\filename.exe"
-          ],
-          "pattern": "(.|\\s)*\\S(.|\\s)*"
-        }
-      },
-      "url": {
-        "$id": "#/properties/url",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Url Schema",
+      }
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Url Schema",
+      "examples": [
+        "https://www.download.filename.exe"
+      ],
+      "pattern": "(.|\\s)*\\S(.|\\s)*"
+    },
+    "urls": {
+      "$id": "#/properties/urls",
+      "type": [
+        "array",
+        "null"
+      ],
+      "title": "The Urls Schema",
+      "items": {
+        "$id": "#/properties/urls/items",
+        "type": "string",
+        "title": "The Items Schema",
         "examples": [
-          "https://www.download.filename.exe"
+          "https://www.download.filename1.exe",
+          "https://www.download.filename2.exe"
         ],
         "pattern": "(.|\\s)*\\S(.|\\s)*"
-      },
-      "urls": {
-        "$id": "#/properties/urls",
-        "type": [
-          "array",
-          "null"
-        ],
-        "title": "The Urls Schema",
-        "items": {
-          "$id": "#/properties/urls/items",
-          "type": "string",
-          "title": "The Items Schema",
-          "examples": [
-            "https://www.download.filename1.exe",
-            "https://www.download.filename2.exe"
-          ],
-          "pattern": "(.|\\s)*\\S(.|\\s)*"
-        }
-      },
-      "installPath": {
-        "$id": "#/properties/installPath",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Installpath Schema",
+      }
+    },
+    "installPath": {
+      "$id": "#/properties/installPath",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Installpath Schema",
+      "examples": [
+        "C:\\"
+      ],
+      "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
+    },
+    "installRoot": {
+      "$id": "#/properties/installRoot",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Installroot Schema",
+      "examples": [
+        "C:\\"
+      ],
+      "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
+    },
+    "pathVar": {
+      "$id": "#/properties/pathVar",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Pathvar Schema",
+      "examples": [
+        "C:\\"
+      ],
+      "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
+    },
+    "guid": {
+      "$id": "#/properties/guid",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Guid Schema",
+      "examples": [
+        "{123}"
+      ],
+      "pattern": "(.|\\s)*\\S(.|\\s)*"
+    },
+    "installArguments": {
+      "$id": "#/properties/installArguments",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Installarguments Schema",
+      "examples": [
+        "--quiet"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "removeArguments": {
+      "$id": "#/properties/removeArguments",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Removearguments Schema",
+      "examples": [
+        "--quiet"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "removeCommands": {
+      "$id": "#/properties/removeCommands",
+      "type": [
+        "array",
+        "null"
+      ],
+      "title": "The Removecommands Schema",
+      "items": {
+        "$id": "#/properties/removeCommands/items",
+        "type": "string",
+        "title": "The Items Schema",
         "examples": [
-          "C:\\"
-        ],
-        "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
-      },
-      "installRoot": {
-        "$id": "#/properties/installRoot",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Installroot Schema",
-        "examples": [
-          "C:\\"
-        ],
-        "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
-      },
-      "pathVar": {
-        "$id": "#/properties/pathVar",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Pathvar Schema",
-        "examples": [
-          "C:\\"
-        ],
-        "pattern": "^[a-zA-Z]:\\\\[\\\\\\S|*\\S]?.*$"
-      },
-      "guid": {
-        "$id": "#/properties/guid",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Guid Schema",
-        "examples": [
-          "{123}"
-        ],
-        "pattern": "(.|\\s)*\\S(.|\\s)*"
-      },
-      "installArguments": {
-        "$id": "#/properties/installArguments",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Installarguments Schema",
-        "examples": [
+          "--quiet",
           "--quiet"
         ],
         "pattern": "^(.*)$"
-      },
-      "removeArguments": {
-        "$id": "#/properties/removeArguments",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Removearguments Schema",
-        "examples": [
-          "--quiet"
-        ],
-        "pattern": "^(.*)$"
-      },
-      "removeCommands": {
-        "$id": "#/properties/removeCommands",
-        "type": [
-          "array",
-          "null"
-        ],
-        "title": "The Removecommands Schema",
-        "items": {
-          "$id": "#/properties/removeCommands/items",
-          "type": "string",
-          "title": "The Items Schema",
-          "examples": [
-            "--quiet",
-            "--quiet"
-          ],
-          "pattern": "^(.*)$"
+      }
+    },
+    "log": {
+      "$id": "#/properties/log",
+      "type": "boolean",
+      "title": "The Log Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "dirArgument": {
+      "$id": "#/properties/dirArgument",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Dirargument Schema",
+      "default": "",
+      "examples": [
+        "DIR"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "downloadBeforeRemove": {
+      "$id": "#/properties/downloadBeforeRemove",
+      "type": "boolean",
+      "title": "The Downloadbeforeremove Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "downloadBeforeInstall": {
+      "$id": "#/properties/downloadBeforeInstall",
+      "type": "boolean",
+      "title": "The Downloadbeforeinstall Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "files"
+            ]
+          }
         }
       },
-      "log": {
-        "$id": "#/properties/log",
-        "type": "boolean",
-        "title": "The Log Schema",
-        "default": false,
-        "examples": [
-          false
-        ]
-      },
-      "dirArgument": {
-        "$id": "#/properties/dirArgument",
-        "type": [
-          "string",
-          "null"
-        ],
-        "title": "The Dirargument Schema",
-        "default": "",
-        "examples": [
-          "DIR"
-        ],
-        "pattern": "^(.*)$"
-      },
-      "downloadBeforeRemove": {
-        "$id": "#/properties/downloadBeforeRemove",
-        "type": "boolean",
-        "title": "The Downloadbeforeremove Schema",
-        "default": false,
-        "examples": [
-          true
-        ]
-      },
-      "downloadBeforeInstall": {
-        "$id": "#/properties/downloadBeforeInstall",
-        "type": "boolean",
-        "title": "The Downloadbeforeinstall Schema",
-        "default": false,
-        "examples": [
-          true
+      "then": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/files/filenames-requires-urls"
+          },
+          {
+            "$ref": "#/definitions/files/filename-requires-url"
+          },
+          {
+            "$ref": "#/definitions/files/filename-filenames-null"
+          }
         ]
       }
     },
-    "allOf": [
-      {
-        "if": {
-          "properties": {
-            "type": {
-              "enum": [
-                "files"
-              ]
-            }
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "zip"
+            ]
           }
-        },
-        "then": {
-          "allOf": [
-            {
-              "$ref": "#/definitions/files/filenames-requires-urls"
-            },
-            {
-              "$ref": "#/definitions/files/filename-requires-url"
-            },
-            {
-              "$ref": "#/definitions/files/filename-filenames-null"
-            }
-          ]
         }
       },
-      {
-        "if": {
-          "properties": {
-            "type": {
-              "enum": [
-                "zip"
-              ]
-            }
+      "then": {
+        "anyOf": [
+          {
+            "$ref": "#/definitions/zip/filenames-requires-urls"
+          },
+          {
+            "$ref": "#/definitions/zip/filename-requires-url"
+          },
+          {
+            "$ref": "#/definitions/zip/zip-requires"
           }
-        },
-        "then": {
-          "allOf": [
-            {
-              "$ref": "#/definitions/zip/filenames-requires-urls"
-            },
-            {
-              "$ref": "#/definitions/zip/filename-requires-url"
-            },
-            {
-              "$ref": "#/definitions/zip/zip-requires"
-            }
-          ]
-        }
-      },
-      {
-        "if": {
-          "properties": {
-            "type": {
-              "enum": [
-                "scripts"
-              ]
-            }
-          }
-        },
-        "then": {}
-      },
-      {
-        "if": {
-          "properties": {
-            "type": {
-              "enum": [
-                "exe"
-              ]
-            }
-          }
-        },
-        "then": {
-          "allOf": [
-            {
-              "$ref": "#/definitions/exe/exe-requires"
-            }
-          ]
-        }
-      },
-      {
-        "if": {
-          "properties": {
-            "type": {
-              "enum": [
-                "msi"
-              ]
-            }
-          }
-        },
-        "then": {
-          "allOf": [
-            {
-              "$ref": "#/definitions/msi/msi-requires"
-            }
-          ]
-        }
+        ]
       }
-    ],
-    "definitions": {
-      "files": {
-        "filenames-requires-urls": {
-          "if": {
-            "properties": {
-              "filenames": {
-                "type": "array"
-              }
-            }
-          },
-          "then": {
-            "required": [
-              "urls",
-              "filenames",
-              "installPath",
-              "pathVar"
-            ],
-            "properties": {
-              "urls": {
-                "type": "array"
-              },
-              "filename": {
-                "type": "null"
-              },
-              "url": {
-                "type": "null"
-              }
-            }
-          }
-        },
-        "filename-requires-url": {
-          "if": {
-            "properties": {
-              "filename": {
-                "type": "string"
-              }
-            }
-          },
-          "then": {
-            "required": [
-              "url",
-              "filename",
-              "installPath",
-              "pathVar"
-            ],
-            "properties": {
-              "filenames": {
-                "type": "null"
-              },
-              "urls": {
-                "type": "null"
-              },
-              "url": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "filename-filenames-null": {
-          "if": {
-            "properties": {
-              "filename": {
-                "type": "null"
-              },
-              "filenames": {
-                "type": "null"
-              }
-            }
-          },
-          "then": {
-            "properties": {
-              "filename": {
-                "type": "string"
-              },
-              "filenames": {
-                "type": "array"
-              }
-            }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "scripts"
+            ]
           }
         }
       },
-      "zip": {
-        "zip-requires": {
+      "then": {}
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "exe"
+            ]
+          }
+        }
+      },
+      "then": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/exe/exe-requires"
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "msi"
+            ]
+          }
+        }
+      },
+      "then": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/msi/msi-requires"
+          }
+        ]
+      }
+    }
+  ],
+  "definitions": {
+    "files": {
+      "filenames-requires-urls": {
+        "if": {
+          "properties": {
+            "filenames": {
+              "type": "array"
+            }
+          }
+        },
+        "then": {
           "required": [
+            "urls",
+            "filenames",
             "installPath",
-            "pathVar",
-            "installRoot"
+            "pathVar"
           ],
           "properties": {
-            "installPath": {
-              "type": "string"
+            "urls": {
+              "type": "array"
             },
-            "pathVar": {
-              "type": "string"
+            "filename": {
+              "type": "null"
             },
-            "installRoot": {
-              "type": "string"
-            }
-          }
-        },
-        "filenames-requires-urls": {
-          "if": {
-            "properties": {
-              "filenames": {
-                "type": "array"
-              }
-            }
-          },
-          "then": {
-            "required": [
-              "urls",
-              "filenames",
-              "installPath",
-              "pathVar"
-            ],
-            "properties": {
-              "urls": {
-                "type": "array"
-              },
-              "filename": {
-                "type": "null"
-              },
-              "url": {
-                "type": "null"
-              }
-            }
-          }
-        },
-        "filename-requires-url": {
-          "if": {
-            "properties": {
-              "filename": {
-                "type": "string"
-              }
-            }
-          },
-          "then": {
-            "required": [
-              "url",
-              "filename",
-              "installPath",
-              "pathVar"
-            ],
-            "properties": {
-              "filenames": {
-                "type": "null"
-              },
-              "urls": {
-                "type": "null"
-              },
-              "url": {
-                "type": "string"
-              }
+            "url": {
+              "type": "null"
             }
           }
         }
       },
-      "scripts": {},
-      "exe": {
-        "exe-requires": {
-          "required": [
-            "filename",
-            "url",
-            "guid",
-            "installArguments",
-            "removeArguments"
-          ]
+      "filename-requires-url": {
+        "if": {
+          "properties": {
+            "filename": {
+              "type": "string"
+            }
+          }
         },
+        "then": {
+          "required": [
+            "url",
+            "filename",
+            "installPath",
+            "pathVar"
+          ],
+          "properties": {
+            "filenames": {
+              "type": "null"
+            },
+            "urls": {
+              "type": "null"
+            },
+            "url": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "filename-filenames-null": {
+        "if": {
+          "properties": {
+            "filename": {
+              "type": "null"
+            },
+            "filenames": {
+              "type": "null"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "filename": {
+              "type": "string"
+            },
+            "filenames": {
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "zip": {
+      "zip-requires": {
+        "required": [
+          "installPath",
+          "pathVar",
+          "installRoot"
+        ],
         "properties": {
-          "filename": {
+          "installPath": {
             "type": "string"
           },
-          "url": {
+          "pathVar": {
+            "type": "string"
+          },
+          "installRoot": {
             "type": "string"
           }
         }
       },
-      "msi": {
-        "msi-requires": {
-          "required": [
-            "filename",
-            "url",
-            "guid",
-            "installArguments",
-            "removeArguments"
-          ]
-        },
-        "properties": {
-          "filename": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
-          },
-          "guid": {
-            "type": "string"
+      "filenames-requires-urls": {
+        "if": {
+          "properties": {
+            "filenames": {
+              "type": "array"
+            }
           }
+        },
+        "then": {
+          "required": [
+            "urls",
+            "filenames",
+            "installPath",
+            "pathVar"
+          ],
+          "properties": {
+            "urls": {
+              "type": "array"
+            },
+            "filename": {
+              "type": "null"
+            },
+            "url": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "filename-requires-url": {
+        "if": {
+          "properties": {
+            "filename": {
+              "type": "string"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "url",
+            "filename",
+            "installPath",
+            "pathVar"
+          ],
+          "properties": {
+            "filenames": {
+              "type": "null"
+            },
+            "urls": {
+              "type": "null"
+            },
+            "url": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "scripts": {},
+    "exe": {
+      "exe-requires": {
+        "required": [
+          "filename",
+          "url",
+          "guid",
+          "installArguments",
+          "removeArguments"
+        ]
+      },
+      "properties": {
+        "filename": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "msi": {
+      "msi-requires": {
+        "required": [
+          "filename",
+          "url",
+          "guid",
+          "installArguments",
+          "removeArguments"
+        ]
+      },
+      "properties": {
+        "filename": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "guid": {
+          "type": "string"
         }
       }
     }
   }
+}
