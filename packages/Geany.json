@@ -1,0 +1,19 @@
+{
+    "type": "exe",
+    "name": "Geany",
+    "filename": "geany.exe",
+    "filenames": null,
+    "url": "https://download.geany.org/geany-1.35_setup.exe",
+    "urls": null,
+    "installPath": null,
+    "installRoot": null,
+    "pathVar": "C:\\Program Files (x86)\\Geany\\bin",
+    "guid": "Geany",
+    "installArguments": "/S",
+    "removeArguments": "/S",
+    "removeCommands": null,
+    "log": true,
+    "dirArgument": "D",
+    "downloadBeforeRemove": false,
+    "downloadBeforeInstall": true
+  }
